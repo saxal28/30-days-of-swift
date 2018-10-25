@@ -13,7 +13,7 @@
 ---
 
 
-### [Project 01 - GoodAsOldPhones](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2001%20-%20GoodAsOldPhones)  :white_check_mark:
+### [Project 01 - GoodAsOldPhones](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2001%20-%20GoodAsOldPhones)  :large_blue_circle:
 
 ### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
 
