@@ -1,6 +1,5 @@
 # 30 Days of Swift
-### 30 Mini Swift Projects
-https://github.com/soapyigu/Swift-30-Projects
+### [30 Mini Swift Projects](https://github.com/soapyigu/Swift-30-Projects)
 
 ---
 
@@ -11,9 +10,7 @@ https://github.com/soapyigu/Swift-30-Projects
 | __Not Completed__ | :x:                   |
 
 
-
-
-__Not Completed__ :x:
+---
 
 
 ### [Project 01 - GoodAsOldPhones](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2001%20-%20GoodAsOldPhones)  :white_check_mark:
@@ -21,37 +18,3 @@ __Not Completed__ :x:
 ### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
 
 ### [Project 03 - FacebookMe](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2003%20-%20FacebookMe) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
-
-### [Project 02 - Stopwatch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2002%20-%20Stopwatch) :x:
