@@ -1,2 +1,6 @@
-# 30-days-of-swift
-30 swift learning projects :)
+# 30 Days of Swift
+### 30 Mini Swift Projects
+https://github.com/soapyigu/Swift-30-Projects
+
+---
+
