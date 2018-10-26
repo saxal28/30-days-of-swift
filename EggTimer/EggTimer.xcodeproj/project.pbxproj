@@ -7,27 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03A31DFC218266DD0088B501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A31DFB218266DD0088B501 /* AppDelegate.swift */; };
-		03A31E01218266DD0088B501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A31DFF218266DD0088B501 /* Main.storyboard */; };
-		03A31E03218266E10088B501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A31E02218266E10088B501 /* Assets.xcassets */; };
-		03A31E06218266E10088B501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A31E04218266E10088B501 /* LaunchScreen.storyboard */; };
-		03A31E112182A2560088B501 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A31E102182A2560088B501 /* ProductsVC.swift */; };
-		03A31E132182A28A0088B501 /* UsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A31E122182A28A0088B501 /* UsVC.swift */; };
+		03A31E212182B35F0088B501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A31E202182B35F0088B501 /* AppDelegate.swift */; };
+		03A31E232182B35F0088B501 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A31E222182B35F0088B501 /* ViewController.swift */; };
+		03A31E262182B35F0088B501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A31E242182B35F0088B501 /* Main.storyboard */; };
+		03A31E282182B3600088B501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A31E272182B3600088B501 /* Assets.xcassets */; };
+		03A31E2B2182B3600088B501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03A31E292182B3600088B501 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03A31DF8218266DD0088B501 /* GoodAsOldPhones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodAsOldPhones.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		03A31DFB218266DD0088B501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03A31E00218266DD0088B501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		03A31E02218266E10088B501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		03A31E05218266E10088B501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		03A31E07218266E10088B501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03A31E102182A2560088B501 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
-		03A31E122182A28A0088B501 /* UsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsVC.swift; sourceTree = "<group>"; };
+		03A31E1D2182B35F0088B501 /* EggTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EggTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03A31E202182B35F0088B501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03A31E222182B35F0088B501 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03A31E252182B35F0088B501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03A31E272182B3600088B501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03A31E2A2182B3600088B501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03A31E2C2182B3600088B501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03A31DF5218266DD0088B501 /* Frameworks */ = {
+		03A31E1A2182B35F0088B501 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,80 +35,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03A31DEF218266DD0088B501 = {
+		03A31E142182B35F0088B501 = {
 			isa = PBXGroup;
 			children = (
-				03A31DFA218266DD0088B501 /* GoodAsOldPhones */,
-				03A31DF9218266DD0088B501 /* Products */,
+				03A31E1F2182B35F0088B501 /* EggTimer */,
+				03A31E1E2182B35F0088B501 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		03A31DF9218266DD0088B501 /* Products */ = {
+		03A31E1E2182B35F0088B501 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				03A31DF8218266DD0088B501 /* GoodAsOldPhones.app */,
+				03A31E1D2182B35F0088B501 /* EggTimer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		03A31DFA218266DD0088B501 /* GoodAsOldPhones */ = {
+		03A31E1F2182B35F0088B501 /* EggTimer */ = {
 			isa = PBXGroup;
 			children = (
-				03A31E0D2182A1F60088B501 /* Controllers */,
-				03A31DFB218266DD0088B501 /* AppDelegate.swift */,
-				03A31DFF218266DD0088B501 /* Main.storyboard */,
-				03A31E02218266E10088B501 /* Assets.xcassets */,
-				03A31E04218266E10088B501 /* LaunchScreen.storyboard */,
-				03A31E07218266E10088B501 /* Info.plist */,
+				03A31E202182B35F0088B501 /* AppDelegate.swift */,
+				03A31E222182B35F0088B501 /* ViewController.swift */,
+				03A31E242182B35F0088B501 /* Main.storyboard */,
+				03A31E272182B3600088B501 /* Assets.xcassets */,
+				03A31E292182B3600088B501 /* LaunchScreen.storyboard */,
+				03A31E2C2182B3600088B501 /* Info.plist */,
 			);
-			path = GoodAsOldPhones;
-			sourceTree = "<group>";
-		};
-		03A31E0D2182A1F60088B501 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				03A31E102182A2560088B501 /* ProductsVC.swift */,
-				03A31E122182A28A0088B501 /* UsVC.swift */,
-			);
-			path = Controllers;
+			path = EggTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		03A31DF7218266DD0088B501 /* GoodAsOldPhones */ = {
+		03A31E1C2182B35F0088B501 /* EggTimer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03A31E0A218266E10088B501 /* Build configuration list for PBXNativeTarget "GoodAsOldPhones" */;
+			buildConfigurationList = 03A31E2F2182B3600088B501 /* Build configuration list for PBXNativeTarget "EggTimer" */;
 			buildPhases = (
-				03A31DF4218266DD0088B501 /* Sources */,
-				03A31DF5218266DD0088B501 /* Frameworks */,
-				03A31DF6218266DD0088B501 /* Resources */,
+				03A31E192182B35F0088B501 /* Sources */,
+				03A31E1A2182B35F0088B501 /* Frameworks */,
+				03A31E1B2182B35F0088B501 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = GoodAsOldPhones;
-			productName = GoodAsOldPhones;
-			productReference = 03A31DF8218266DD0088B501 /* GoodAsOldPhones.app */;
+			name = EggTimer;
+			productName = EggTimer;
+			productReference = 03A31E1D2182B35F0088B501 /* EggTimer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		03A31DF0218266DD0088B501 /* Project object */ = {
+		03A31E152182B35F0088B501 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Alan Sax";
 				TargetAttributes = {
-					03A31DF7218266DD0088B501 = {
+					03A31E1C2182B35F0088B501 = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 03A31DF3218266DD0088B501 /* Build configuration list for PBXProject "GoodAsOldPhones" */;
+			buildConfigurationList = 03A31E182182B35F0088B501 /* Build configuration list for PBXProject "EggTimer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,55 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 03A31DEF218266DD0088B501;
-			productRefGroup = 03A31DF9218266DD0088B501 /* Products */;
+			mainGroup = 03A31E142182B35F0088B501;
+			productRefGroup = 03A31E1E2182B35F0088B501 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				03A31DF7218266DD0088B501 /* GoodAsOldPhones */,
+				03A31E1C2182B35F0088B501 /* EggTimer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		03A31DF6218266DD0088B501 /* Resources */ = {
+		03A31E1B2182B35F0088B501 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A31E06218266E10088B501 /* LaunchScreen.storyboard in Resources */,
-				03A31E03218266E10088B501 /* Assets.xcassets in Resources */,
-				03A31E01218266DD0088B501 /* Main.storyboard in Resources */,
+				03A31E2B2182B3600088B501 /* LaunchScreen.storyboard in Resources */,
+				03A31E282182B3600088B501 /* Assets.xcassets in Resources */,
+				03A31E262182B35F0088B501 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		03A31DF4218266DD0088B501 /* Sources */ = {
+		03A31E192182B35F0088B501 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A31E132182A28A0088B501 /* UsVC.swift in Sources */,
-				03A31E112182A2560088B501 /* ProductsVC.swift in Sources */,
-				03A31DFC218266DD0088B501 /* AppDelegate.swift in Sources */,
+				03A31E232182B35F0088B501 /* ViewController.swift in Sources */,
+				03A31E212182B35F0088B501 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		03A31DFF218266DD0088B501 /* Main.storyboard */ = {
+		03A31E242182B35F0088B501 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				03A31E00218266DD0088B501 /* Base */,
+				03A31E252182B35F0088B501 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		03A31E04218266E10088B501 /* LaunchScreen.storyboard */ = {
+		03A31E292182B3600088B501 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				03A31E05218266E10088B501 /* Base */,
+				03A31E2A2182B3600088B501 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -174,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		03A31E08218266E10088B501 /* Debug */ = {
+		03A31E2D2182B3600088B501 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +222,7 @@
 			};
 			name = Debug;
 		};
-		03A31E09218266E10088B501 /* Release */ = {
+		03A31E2E2182B3600088B501 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -288,36 +276,36 @@
 			};
 			name = Release;
 		};
-		03A31E0B218266E10088B501 /* Debug */ = {
+		03A31E302182B3600088B501 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CC6R63P87K;
-				INFOPLIST_FILE = GoodAsOldPhones/Info.plist;
+				INFOPLIST_FILE = EggTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = saxal.GoodAsOldPhones;
+				PRODUCT_BUNDLE_IDENTIFIER = saxal.EggTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		03A31E0C218266E10088B501 /* Release */ = {
+		03A31E312182B3600088B501 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CC6R63P87K;
-				INFOPLIST_FILE = GoodAsOldPhones/Info.plist;
+				INFOPLIST_FILE = EggTimer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = saxal.GoodAsOldPhones;
+				PRODUCT_BUNDLE_IDENTIFIER = saxal.EggTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -327,25 +315,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03A31DF3218266DD0088B501 /* Build configuration list for PBXProject "GoodAsOldPhones" */ = {
+		03A31E182182B35F0088B501 /* Build configuration list for PBXProject "EggTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03A31E08218266E10088B501 /* Debug */,
-				03A31E09218266E10088B501 /* Release */,
+				03A31E2D2182B3600088B501 /* Debug */,
+				03A31E2E2182B3600088B501 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		03A31E0A218266E10088B501 /* Build configuration list for PBXNativeTarget "GoodAsOldPhones" */ = {
+		03A31E2F2182B3600088B501 /* Build configuration list for PBXNativeTarget "EggTimer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03A31E0B218266E10088B501 /* Debug */,
-				03A31E0C218266E10088B501 /* Release */,
+				03A31E302182B3600088B501 /* Debug */,
+				03A31E312182B3600088B501 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 03A31DF0218266DD0088B501 /* Project object */;
+	rootObject = 03A31E152182B35F0088B501 /* Project object */;
 }
