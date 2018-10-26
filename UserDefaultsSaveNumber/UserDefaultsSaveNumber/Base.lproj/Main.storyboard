@@ -18,14 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="111-111-1111" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYX-a8-Ap0">
-                                <rect key="frame" x="45.5" y="306.5" width="284.5" height="55"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nat-jC-MdI">
-                                <rect key="frame" x="77.5" y="421.5" width="220" height="40"/>
+                                <rect key="frame" x="77.5" y="402.5" width="220" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Iu-7H-USu">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
@@ -58,18 +52,34 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="111-111-1111" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VAt-fZ-XE8">
+                                <rect key="frame" x="50" y="303.5" width="275" height="59"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" smartDashesType="yes" textContentType="tel"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vO-7Q-RpM">
+                                <rect key="frame" x="81" y="70" width="214.5" height="55"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="KYX-a8-Ap0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6ad-2A-4vn"/>
-                            <constraint firstItem="KYX-a8-Ap0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AZ2-Tj-c7S"/>
+                            <constraint firstItem="VAt-fZ-XE8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="35G-3q-jtr"/>
+                            <constraint firstItem="2vO-7Q-RpM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="55k-FD-6ag"/>
+                            <constraint firstItem="VAt-fZ-XE8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="FYh-Kd-WIJ"/>
+                            <constraint firstItem="VAt-fZ-XE8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="NA3-ek-mEY"/>
+                            <constraint firstItem="nat-jC-MdI" firstAttribute="top" secondItem="VAt-fZ-XE8" secondAttribute="bottom" constant="40" id="d7K-cA-VTa"/>
                             <constraint firstItem="nat-jC-MdI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ipj-n7-Ymd"/>
-                            <constraint firstItem="nat-jC-MdI" firstAttribute="top" secondItem="KYX-a8-Ap0" secondAttribute="bottom" constant="60" id="myD-vK-Clh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VAt-fZ-XE8" secondAttribute="trailing" constant="50" id="l7p-o6-oOC"/>
+                            <constraint firstItem="2vO-7Q-RpM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yIU-jN-3hc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="phoneNumberLabel" destination="KYX-a8-Ap0" id="l1W-g6-rmx"/>
+                        <outlet property="textInput" destination="VAt-fZ-XE8" id="Uxw-f3-328"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

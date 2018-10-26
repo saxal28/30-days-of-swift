@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var phoneNumberToSave = "123-456-7891"
+    var phoneNumberToSave = ""
     var savedPhoneNumber = "";
     
     
@@ -18,7 +18,9 @@ class ViewController: UIViewController {
     // OUTLETS
     //===========================
     
-    @IBOutlet weak var phoneNumberLabel: UILabel!
+    
+    @IBOutlet weak var textInput: UITextField!
+    
     
     //===========================
     // ACTIONS
@@ -27,13 +29,12 @@ class ViewController: UIViewController {
     
     @IBAction func saveNumberPressed(_ sender: Any) {
         saveNumberToUserDefaults()
-        phoneNumberLabel.text = phoneNumberToSave
-
+        updateInputText(text: phoneNumberToSave)
     }
     
     @IBAction func deleteNumberPressed(_ sender: Any) {
         removeNumberFromUserDefaults()
-        phoneNumberLabel.text = ""
+        updateInputText(text: "")
     }
     
     
@@ -47,13 +48,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         loadNumberFromUserDefaults()
-        phoneNumberLabel.text = savedPhoneNumber
+        updateInputText(text: savedPhoneNumber);
 
     }
     
     
     func saveNumberToUserDefaults() {
+        
+        phoneNumberToSave = textInput.text!;
+        
         UserDefaults.standard.set(phoneNumberToSave, forKey: "phoneNumber")
+        
+        print("TEST", phoneNumberToSave)
     }
     
     func loadNumberFromUserDefaults() {
@@ -68,6 +74,11 @@ class ViewController: UIViewController {
     
     func removeNumberFromUserDefaults(){
         UserDefaults.standard.removeObject(forKey: "phoneNumber");
+    }
+    
+    
+    func updateInputText(text: String) {
+        textInput.text = text;
     }
 
 
