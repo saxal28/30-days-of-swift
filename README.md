@@ -1,6 +1,7 @@
 # 30 Days of Swift
 ### [30 Mini Swift Projects](https://github.com/soapyigu/Swift-30-Projects)
 
+
 ---
 
 | Key               |                       |
@@ -8,7 +9,6 @@
 | __Completed__     |  :white_check_mark:   |
 | __Doing__         |  :large_blue_circle:  |
 | __Not Completed__ | :x:                   |
-
 
 ---
 
@@ -54,4 +54,6 @@
 ### [Project 19 - Pinterest]https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2019%20-%20Pinterest) :x:
 
 ### [Project 20 - FlickrSearch](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2020%20-%20FlickrSearch) :x:
+
+---
 
