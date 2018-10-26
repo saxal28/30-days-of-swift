@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
     @objc func fireTimer() {
         
-        if(timerStart > 0) {
+        if timerStart > 0 {
             timerStart -= 1;
             updateLabel()
         } else {
@@ -46,33 +46,30 @@ class ViewController: UIViewController {
 
     
     @IBAction func playButtonPressed(_ sender: Any) {
-        print("pressed play");
         startTimer();
     }
     
     
     @IBAction func pauseButtonPressed(_ sender: Any) {
-        print("pressed pause");
         stopTimer();
     }
     
     
     @IBAction func add10SecondsButtonPressed(_ sender: Any) {
-        print("add 10 seconds");
         timerStart += 10;
         updateLabel();
     }
     
     
     @IBAction func minue10SecondsButtonPressed(_ sender: Any) {
-        print("subtract 10 seconds");
-        timerStart -= 10;
-        updateLabel();
+        if timerStart < 10 {
+            timerStart -= 10;
+            updateLabel();
+        }
     }
     
     
     @IBAction func resetButtonPressed(_ sender: Any) {
-        print("pressed reset");
         timerStart = 120;
         updateLabel();
     }
