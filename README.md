@@ -27,7 +27,7 @@
 
 ### :x: [Project 07 - PokedexGo](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2007%20-%20PokedexGo)
 
-### :x: [Project 08 - SimpleRSS Reader](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2008%20-%20SimpleRSSReader) :x:
+### :x: [Project 08 - SimpleRSS Reader](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2008%20-%20SimpleRSSReader)
 
 ### :x: [Project 09 - PhotoScroll](https://github.com/soapyigu/Swift-30-Projects/tree/master/Project%2009%20-%20PhotoScroll) 
 
