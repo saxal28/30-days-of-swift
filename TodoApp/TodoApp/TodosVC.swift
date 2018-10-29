@@ -10,16 +10,11 @@ import UIKit
 
 class TodosVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var todos = NSArray()
+    var todos = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         getTodos()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -37,7 +32,7 @@ class TodosVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     //====================================
-    // MARK: TABLE PROTOCOL
+    // MARK: TABLE PROTOCOL / METHODS
     //====================================
     
 
@@ -56,6 +51,17 @@ class TodosVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     }
     
+    // swipe to delete
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            print("DELETE ROW");
+            todos.remove(at: indexPath.row)
+            tableView.reloadData();
+        }
+    }
+    
     
     //====================================
     // MARK: TODO LOGIC
@@ -63,7 +69,7 @@ class TodosVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     func getTodos() {
-        if let data = UserDefaults.standard.object(forKey: "todos") as? NSArray {
+        if let data = UserDefaults.standard.object(forKey: "todos") as? [String] {
             print("TODOS", data)
             todos = data
         } else {
