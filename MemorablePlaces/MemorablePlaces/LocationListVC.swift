@@ -15,13 +15,12 @@ class LocationListVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // delete locations - TESTING
-        // UserDefaults.standard.removeObject(forKey: "locations")
         loadSavedLocations()
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        tableView.reloadData()
+        loadSavedLocations()
+        selectedLocation = ""
     }
     
     // ===============================
@@ -41,8 +40,6 @@ class LocationListVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedLocation = savedLocations[indexPath.row]
-        print("selected location \(selectedLocation)")
-        
         performSegue(withIdentifier: "toLocationMapVC", sender: nil)
     }
     
@@ -50,17 +47,12 @@ class LocationListVC: UITableViewController {
     // MARK: - USER DEFAULTS - LOCAL STORAGE
     // ===============================
     
-    
     func loadSavedLocations() {
         
         if let locations =  UserDefaults.standard.object(forKey: "locations") {
-            print("saved locations", locations)
             savedLocations = locations as! Array
             tableView.reloadData()
-        } else {
-            print("no saved locations!")
         }
-
     }
 
     // ===============================

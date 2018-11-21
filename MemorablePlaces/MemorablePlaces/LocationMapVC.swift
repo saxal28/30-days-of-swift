@@ -18,14 +18,19 @@ class LocationMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        selectedLocation == "" ? self.setupUserLocationMap() : self.setupSavedLocationMap(locationName: selectedLocation)
+        selectedLocation == "" ?
+            self.setupUserLocationMap() :
+            self.setupSavedLocationMap(locationName: selectedLocation)
     }
     
     
     func setupSavedLocationMap(locationName: String) {
+        
         let geoLocation = CLGeocoder()
         geoLocation.geocodeAddressString(locationName) { (data, error) in
             if error != nil {
+                print("ERROR")
+            } else {
                 let savedLocation = data![0]
                 self.setupMap(userLocation: savedLocation)
             }
@@ -56,8 +61,8 @@ class LocationMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
             if (error != nil) {
                 print("ERROR")
             } else {
-                print("data", data![0])
-                self.setupMap(userLocation: data![0])
+                let userLocation = data![0]
+                self.setupMap(userLocation: userLocation)
             }
         }
         
@@ -71,7 +76,6 @@ class LocationMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
     
     func setupMap(userLocation: CLPlacemark) {
         
-        
         let latitude: CLLocationDegrees = (userLocation.location?.coordinate.latitude)!
         let longitude: CLLocationDegrees = (userLocation.location?.coordinate.longitude)!
         let latDelta = 0.05
@@ -83,6 +87,12 @@ class LocationMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
         
         map.setRegion(region, animated: true)
         
+        //add marker
+        let annotation: MKPointAnnotation = MKPointAnnotation()
+        annotation.title = userLocation.name
+        annotation.coordinate = center
+        map.addAnnotation(annotation)
+        
         // add longpress
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress))
         longPress.minimumPressDuration = 1.5
@@ -92,32 +102,33 @@ class LocationMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
     
     @objc func handleLongPress(gestureRecognizer: UIGestureRecognizer) {
         
-        let touchPoint = gestureRecognizer.location(in: self.map)
-        let coordinate  = map.convert(touchPoint, toCoordinateFrom: self.map)
-        let latitude = coordinate.latitude
-        let longitude = coordinate.longitude
-        let location = CLLocation(latitude: latitude, longitude: longitude)
-        
-        let geoLocation = CLGeocoder()
-        geoLocation.reverseGeocodeLocation(location) { (data, error) in
-            if error != nil {
-                print("error")
-            } else {
-                let spot: CLPlacemark = data![0]
-                let name = spot.name!
-                
-                // add map marker
-                let marker = MKPointAnnotation()
-                marker.title = name
-                marker.subtitle = "Subtitle"
-                marker.coordinate = coordinate
-                self.map.addAnnotation(marker)
-                
-                // save location
-                self.saveLocation(locationName: name)
-                
-                
+        if gestureRecognizer.state == UIGestureRecognizerState.began {
+            
+            let touchPoint = gestureRecognizer.location(in: self.map)
+            let coordinate  = map.convert(touchPoint, toCoordinateFrom: self.map)
+            let latitude = coordinate.latitude
+            let longitude = coordinate.longitude
+            let location = CLLocation(latitude: latitude, longitude: longitude)
+            
+            let geoLocation = CLGeocoder()
+            geoLocation.reverseGeocodeLocation(location) { (data, error) in
+                if error != nil {
+                    print("error")
+                } else {
+                    let spot: CLPlacemark = data![0]
+                    let name = spot.name!
+                    
+                    // add map marker
+                    let marker = MKPointAnnotation()
+                    marker.title = name
+                    marker.coordinate = coordinate
+                    self.map.addAnnotation(marker)
+                    
+                    // save location
+                    self.saveLocation(locationName: name)
+                }
             }
+            
         }
     }
     
