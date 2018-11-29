@@ -13,6 +13,7 @@
 		0303CBF1219D0994007A5DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0303CBEF219D0994007A5DD1 /* LaunchScreen.storyboard */; };
 		0303CBF9219D0A00007A5DD1 /* LocationListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303CBF8219D0A00007A5DD1 /* LocationListVC.swift */; };
 		0303CBFB219D0A0C007A5DD1 /* LocationMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0303CBFA219D0A0C007A5DD1 /* LocationMapVC.swift */; };
+		A1F464BBEDAD53BBA498960E /* Pods_MemorablePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8582CBA2F05B549A9BAD18 /* Pods_MemorablePlaces.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		0303CBF2219D0994007A5DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0303CBF8219D0A00007A5DD1 /* LocationListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListVC.swift; sourceTree = "<group>"; };
 		0303CBFA219D0A0C007A5DD1 /* LocationMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapVC.swift; sourceTree = "<group>"; };
+		5DA8424C99FD4411945DBBEC /* Pods-MemorablePlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemorablePlaces.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemorablePlaces/Pods-MemorablePlaces.debug.xcconfig"; sourceTree = "<group>"; };
+		7E8582CBA2F05B549A9BAD18 /* Pods_MemorablePlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemorablePlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		824F4FC514CF59198B249AE8 /* Pods-MemorablePlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemorablePlaces.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemorablePlaces/Pods-MemorablePlaces.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F464BBEDAD53BBA498960E /* Pods_MemorablePlaces.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				0303CBE5219D0993007A5DD1 /* MemorablePlaces */,
 				0303CBE4219D0993007A5DD1 /* Products */,
+				EE9B9749140720B8685EEDD2 /* Pods */,
+				63A73C8DDED2CD9F3B51E0B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = MemorablePlaces;
 			sourceTree = "<group>";
 		};
+		63A73C8DDED2CD9F3B51E0B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E8582CBA2F05B549A9BAD18 /* Pods_MemorablePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE9B9749140720B8685EEDD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DA8424C99FD4411945DBBEC /* Pods-MemorablePlaces.debug.xcconfig */,
+				824F4FC514CF59198B249AE8 /* Pods-MemorablePlaces.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0303CBF5219D0994007A5DD1 /* Build configuration list for PBXNativeTarget "MemorablePlaces" */;
 			buildPhases = (
+				6864C87E8852A6959F127695 /* [CP] Check Pods Manifest.lock */,
 				0303CBDF219D0993007A5DD1 /* Sources */,
 				0303CBE0219D0993007A5DD1 /* Frameworks */,
 				0303CBE1219D0993007A5DD1 /* Resources */,
@@ -132,6 +157,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6864C87E8852A6959F127695 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemorablePlaces-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0303CBDF219D0993007A5DD1 /* Sources */ = {
@@ -282,9 +328,12 @@
 		};
 		0303CBF6219D0994007A5DD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DA8424C99FD4411945DBBEC /* Pods-MemorablePlaces.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HYQH9C4873;
 				INFOPLIST_FILE = MemorablePlaces/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,6 +341,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = saxal.me.MemorablePlaces;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,9 +350,12 @@
 		};
 		0303CBF7219D0994007A5DD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 824F4FC514CF59198B249AE8 /* Pods-MemorablePlaces.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HYQH9C4873;
 				INFOPLIST_FILE = MemorablePlaces/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +363,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = saxal.me.MemorablePlaces;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
