@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AudioPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Caf-RB-vXq">
+                                <rect key="frame" x="172" y="318" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="handlePlayPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ppa-Im-ATn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNf-K4-8im">
+                                <rect key="frame" x="166" y="378" width="42" height="30"/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="handlePausePress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lcC-qo-pBd"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nTJ-ov-PCb">
+                                <rect key="frame" x="18" y="567" width="339" height="31"/>
+                                <connections>
+                                    <action selector="handleSliderMove:" destination="BYZ-38-t0r" eventType="valueChanged" id="3Lb-Tk-tUz"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Caf-RB-vXq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9gh-dg-n0J"/>
+                            <constraint firstItem="eNf-K4-8im" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EpV-8o-fhH"/>
+                            <constraint firstItem="nTJ-ov-PCb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JZq-w4-Cdb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nTJ-ov-PCb" secondAttribute="trailing" constant="20" id="X9f-LD-eRe"/>
+                            <constraint firstItem="eNf-K4-8im" firstAttribute="top" secondItem="Caf-RB-vXq" secondAttribute="bottom" constant="30" id="XUZ-Ny-aAt"/>
+                            <constraint firstItem="Caf-RB-vXq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a7C-yf-Cho"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nTJ-ov-PCb" secondAttribute="bottom" constant="70" id="h6w-Zj-x1y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="slider" destination="nTJ-ov-PCb" id="hTb-jm-0Be"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
