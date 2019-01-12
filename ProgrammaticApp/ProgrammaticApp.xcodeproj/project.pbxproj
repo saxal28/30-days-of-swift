@@ -12,6 +12,8 @@
 		032CAE8521E83FC10043517D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032CAE8321E83FC10043517D /* Main.storyboard */; };
 		032CAE8721E83FC30043517D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032CAE8621E83FC30043517D /* Assets.xcassets */; };
 		032CAE8A21E83FC30043517D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032CAE8821E83FC30043517D /* LaunchScreen.storyboard */; };
+		032CAE9221E991D00043517D /* SwipingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032CAE9121E991D00043517D /* SwipingVC.swift */; };
+		032CAE9421EA79160043517D /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032CAE9321EA79160043517D /* PageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		032CAE8621E83FC30043517D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		032CAE8921E83FC30043517D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		032CAE8B21E83FC30043517D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		032CAE9121E991D00043517D /* SwipingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingVC.swift; sourceTree = "<group>"; };
+		032CAE9321EA79160043517D /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				032CAE8621E83FC30043517D /* Assets.xcassets */,
 				032CAE8821E83FC30043517D /* LaunchScreen.storyboard */,
 				032CAE8B21E83FC30043517D /* Info.plist */,
+				032CAE9121E991D00043517D /* SwipingVC.swift */,
+				032CAE9321EA79160043517D /* PageCell.swift */,
 			);
 			path = ProgrammaticApp;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				032CAE8221E83FC10043517D /* ViewController.swift in Sources */,
+				032CAE9221E991D00043517D /* SwipingVC.swift in Sources */,
+				032CAE9421EA79160043517D /* PageCell.swift in Sources */,
 				032CAE8021E83FC10043517D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
