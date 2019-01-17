@@ -9,6 +9,8 @@
 import UIKit
 
 class SwipingVC: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    
+    let imageNames = ["gnome", "gnome_2", "gnome_3"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,14 +22,15 @@ class SwipingVC: UICollectionViewController, UICollectionViewDelegateFlowLayout 
     //Mark: Collection View
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return imageNames.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as? PageCell
 //        cell.backgroundColor = indexPath.row % 2 == 0 ? .red : .gray
         print("cell", indexPath.row)
-        return cell
+        cell?.topImage.image = UIImage(named: imageNames[indexPath.row])
+        return cell!
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
