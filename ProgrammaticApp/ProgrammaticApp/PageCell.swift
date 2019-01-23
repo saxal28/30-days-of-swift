@@ -10,14 +10,28 @@ import UIKit
 
 class PageCell: UICollectionViewCell {
     
-    let topImage: UIImageView = {
+    
+    var page: Page? {
+        didSet {
+            guard let unwrappedPage = page else { return }
+            
+            let attributedText = NSMutableAttributedString(string: unwrappedPage.headerText, attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 18)])
+            attributedText.append(NSAttributedString(string: "\n\n\n\(unwrappedPage.bodyText)", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 13), NSAttributedStringKey.foregroundColor : #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)]))
+            
+            topImage.image = UIImage(named: unwrappedPage.imageName)
+            descriptionTextView.attributedText = attributedText
+            descriptionTextView.textAlignment = .center
+        }
+    }
+    
+    private let topImage: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "gnome"))
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
-    let descriptionTextView: UITextView = {
+    private let descriptionTextView: UITextView = {
         let textView = UITextView()
         
         let attributedText = NSMutableAttributedString(string: "Join Us Today in our fun and games!", attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 18)])
