@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>646682964647-cnsf8pis3vdc8j1mbitlvmuqkolp6s05.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.646682964647-cnsf8pis3vdc8j1mbitlvmuqkolp6s05</string>
+	<key>API_KEY</key>
+	<string>AIzaSyATAWjGgIV2_Y6TyEBLxSFAlxznAcluExg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>646682964647</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>saxal.PushFun</string>
+	<key>PROJECT_ID</key>
+	<string>auth-aed3b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>auth-aed3b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:646682964647:ios:69c71f97fbb2a21f</string>
+	<key>DATABASE_URL</key>
+	<string>https://auth-aed3b.firebaseio.com</string>
+</dict>
+</plist>
