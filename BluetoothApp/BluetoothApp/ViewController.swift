@@ -39,7 +39,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         names = []
         RSSIs = []
         tableview.reloadData()
-        centralManager?.stopScan() 
+        centralManager?.stopScan()
         centralManager?.scanForPeripherals(withServices: nil, options: nil)
     }
     
